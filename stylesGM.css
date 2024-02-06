@@ -1,0 +1,118 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+nav {
+    position: absolute;
+    position: fixed;
+    top: 10px; /* Ajusta según sea necesario para centrar verticalmente la imagen */
+    right: 20px;
+}
+
+nav lu{
+    float:right;
+    margin: 20px;
+    margin-top: 15px;
+}
+nav lu li{
+    display: inline-block;
+    margin-right: 30px;
+
+}
+nav lu li a{
+    color: aliceblue;
+    text-decoration: none;
+
+}
+nav lu li a:hover{
+    color: rgb(13, 15, 16);
+    transition: 2s;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+footer {
+    margin-top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Puedes ajustar el color a tu preferencia */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.active{
+    opacity: 1 !important;
+    box-shadow: 0 5px 5px rgba(1,23,46,0.6);
+}
+
+.swiper-container {
+    width: 30%;
+    max-width: 200px;
+    margin: auto;
+    position: relative;
+    margin-top: 100px;
+
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: darkgray;
+}
+
+.swiper-button-next {
+    right: 0; /* Alinea el botón de siguiente al borde derecho */
+}
+
+.swiper-button-prev {
+    left: 0; /* Alinea el botón de anterior al borde izquierdo */
+}
+#imagenContainer {
+    width: 700px; /* Ancho deseado */
+    height: auto; /* Altura deseada */
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border: 1px solid #ccc; /* Bordes opcionales para visualización */
+    margin: 200px auto 0; /* Centrar el contenedor en la página */
+}
+
+/* Estilos para la imagen dentro del contenedor */
+#imagenContainer img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    display: block; /* Elimina espacio en blanco debajo de la imagen */
+    margin: 0 auto ; /* Centrar la imagen dentro del contenedor */
+}
